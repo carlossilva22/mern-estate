@@ -3,9 +3,13 @@ import { initializeApp } from 'firebase/app';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
+import dotenv from 'dotenv';
+
+dotenv.config();
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: VITE_FIREBASE_API_KEY,
+  apiKey: process.env.VITE_FIREBASE_API_KEY,
   authDomain: 'mern-estate-4c651.firebaseapp.com',
   projectId: 'mern-estate-4c651',
   storageBucket: 'mern-estate-4c651.firebasestorage.app',
