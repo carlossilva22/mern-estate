@@ -3,9 +3,7 @@ import { initializeApp } from 'firebase/app';
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-import dotenv from 'dotenv';
-
-dotenv.config();
+// Environment variables are automatically injected by Vite; no need for dotenv in frontend code.
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
